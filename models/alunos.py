@@ -8,4 +8,3 @@ class Aluno(SQLModel, table=True):
     senha: str
     nivel: str
     aulas_assistidas: int
-    turma_id: int | None = Field(default=None, foreign_key="turma.id")
